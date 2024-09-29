@@ -19,6 +19,6 @@ class TrainController extends Controller
                       ->orderBy('orario_partenza')
                       ->get();
 
-        return view('home', ['treni' => $treni]);
+        return view('index', ['treni' => $treni]);
     }
 }
